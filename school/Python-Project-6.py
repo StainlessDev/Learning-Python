@@ -16,10 +16,10 @@ def convert_temperature():
             unit_input = input("Enter the unit of measurement (Celsius or Fahrenheit): ")
             unit = unit_input.lower()
 
-            if unit == "celsius":
+            if unit == "celsius" or "c":
                 converted_temperature = celsius_to_fahrenheit(temperature_value)
                 converted_unit = "Fahrenheit"
-            elif unit == "fahrenheit":
+            elif unit == "fahrenheit" or "f":
                 converted_temperature = fahrenheit_to_celsius(temperature_value)
                 converted_unit = "Celsius"
             else:
